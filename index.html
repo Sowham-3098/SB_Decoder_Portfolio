@@ -764,18 +764,18 @@
 
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
-          <form action="#" class="form" data-form="">
+          <form onsubmit="sendEmail(); reset(); return false;" action="#" class="form" data-form="">
             <div class="input-wrapper">
-              <input type="text" name="fullname" placeholder="Full Name" class="form-input" required=""
+              <input type="text" id="fullname" placeholder="Full Name" class="form-input" required=""
                 data-form-input="">
-              <input type="email" name="email" placeholder="Email Address" class="form-input" required=""
+              <input type="email" id="email" placeholder="Email Address" class="form-input" required=""
                 data-form-input="">
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message"
+            <textarea id="message" class="form-input" placeholder="Your Message"
               required-data-form-input=""></textarea>
 
-            <button class="form-btn" type="submit" disabled="">
+            <button class="form-btn" type="submit" >
               <ion-icon name="paper-plane" role="img" class="md hydrated"> </ion-icon>
               <span>Send Message</span>
             </button>
@@ -789,13 +789,36 @@
   </main>
 
 
+<!-- 
+  email contact smtp api link
 
-
+ -->
+<script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script>
+    function sendEmail() {
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "2025.it17.sowhambhuin@gmail.com",
+            Password: "D6446E12845C7D989F8A08ED180EDAD52401",
+            To: '2025.it17.sowhambhuin@gmail.com',
+            From: '2025.it17.sowhambhuin@gmail.com',
+            Subject: "New contact form enquiry",
+            Body: "Name: " + document.getElementById("fullname").value
+                + "<br> Email: " + document.getElementById("email").value
+                +  "<br> Messege:"
+                + document.getElementById("message").value
+        }).then(
+            message => alert("Email sent successfully!")
+        );
+    }
+</script>
 
 
   <!--
     - custom js link
   -->
+
   <script src="script.js"></script>
 
   <!--

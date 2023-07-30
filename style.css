@@ -653,7 +653,7 @@ main {
 
 .timeline-list {
   font-size: var(--fs-6);
-  margin-left: 22px;
+  margin-left: 44px;
 }
 
 .timeline-item {
@@ -1338,7 +1338,7 @@ textarea.form-input::-webkit-resizer {
 
 
   .timeline-list {
-    margin-left: 42px;
+    margin-left: 63px;
   }
 
   .timeline-item:not(:last-child)::before {

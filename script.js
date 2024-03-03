@@ -15,7 +15,7 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 // show-info-more-button-toggle
-const icon = document.getElementById("icon");
+const icon = document.getElementsByClassName("icon");
 let rotationDegrees = 0;
 
 icon.addEventListener("click", function () {
@@ -129,3 +129,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     });
 }
+
+
+
+// 

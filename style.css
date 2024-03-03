@@ -194,6 +194,7 @@ article.active {
   animation: fade 0.5s ease backwards;
 }
 
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -583,7 +584,7 @@ main {
 
 /* cp-profiles */
 .testimonials {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .testimonials-title {
@@ -709,40 +710,79 @@ main {
   margin-bottom: 20px;
 }
 
-.skills-list {
-  padding: 20px;
-}
-
-
-.skills-item:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.skill .title-wrapper {
+.skills-categories {
   display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+  flex-direction: column;
 }
 
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+.category {
+  position: flex;
+  background: transparent;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  margin-bottom: 30px;
 }
 
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
+.category-title {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+}
+
+.tech-item {
+  display: flex;
+  position: relative;
+  color: #ffaf00;
+  background: var(--border-gradient-onyx);
+  padding: 7px 15px; /* Adjust padding */
+  margin: 0 0 7px 10px; /* Adjust margin */
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  min-width: 100px; /* Set a minimum width for better responsiveness */
+}
+
+.tech-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
   border-radius: inherit;
+  z-index: -1;
 }
+
+.tech-logo {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .category-title {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .tech-item {
+    min-width: 80px; /* Adjust minimum width for smaller screens */
+    margin-right: 5px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+} */
+/* Add any additional styling as needed */
+
 
 /* Portfolio------------------------------------------------------------------------------------------------ */
 

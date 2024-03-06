@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+//////////////////////////////////////
+////////////// HEAD //////////////////
+//////////////////////////////////////
+ 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,10 +19,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
+//////////////////////////////////////
+////////////// BODY //////////////////
+//////////////////////////////////////
+
 <body>
-  <!-- main -->
+  
+//////////////////////////////////////
+////////////// MAIN //////////////////
+//////////////////////////////////////
+
   <main>
-    <!-- sidebar -->
+    
+//////////////////////////////////////
+////////////// SIDEBAR-INFO //////////////////
+//////////////////////////////////////
+
+
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
@@ -141,11 +158,17 @@
 
     </aside>
 
-    <!-- MAIN --------------------------------------------------------- -->
+    //////////////////////////////////////
+    //////////// MAIN-CONTENT //////////////
+    //////////////////////////////////////
+
 
     <div class="main-content">
 
-      <!-- NAVBAR------------------------------------------ -->
+      //////////////////////////////////////
+      //////////// NAVBAR //////////////
+      //////////////////////////////////////
+
       <nav class="navbar">
 
         <ul class="navbar-list">
@@ -173,7 +196,12 @@
         </ul>
 
       </nav>
-      <!-- About---------------------------------------------- -->
+      
+
+     //////////////////////////////////////
+      //////////// ABOUT //////////////
+    //////////////////////////////////////
+
 
       <article class="about active" data-page="about">
 
@@ -238,14 +266,33 @@
             </li>
 
 
+            <li class="service-item">
 
+              <div class="service-icon-box">
+                <div class="iconify">
+                  <iconify-icon icon="wpf:android-os" style="color: #e6a800" width="40"></iconify-icon>
+                </div>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Android Development</h4>
+
+                <p class="service-item-text">
+                  I am currently learning android development using React Native and have a strong interest in the
+                  field.
+                </p>
+              </div>
+
+            </li>
 
 
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <iconify-icon icon="carbon:machine-learning" style="color: #c29800" width="40"></iconify-icon>
+                <div class="iconify">
+                  <iconify-icon icon="carbon:machine-learning" style="color: #c29800" width="40"></iconify-icon>
+                </div>
               </div>
 
               <div class="service-content-box">
@@ -477,9 +524,10 @@
 
 
 
-      <!--
-        - #RESUME
-      -->
+     //////////////////////////////////////
+      //////////// RESUME //////////////
+    //////////////////////////////////////
+
 
       <article class="resume" data-page="resume">
 
@@ -602,7 +650,7 @@
                 <div class="tech-item">
                   <p>Python</p>
                 </div>
-                
+
                 <!-- <div class="tech-item">
                   <img src=".\assets\images\c++-logo.png" alt="C++ Logo" class="tech-logo">
                 </div>
@@ -619,9 +667,9 @@
               </div>
             </div>
 
-            <!-- Web Development Tech Stack -->
+            <!-- Development Tech Stack -->
             <div class="category">
-              <h4 class="h4 category-title">Web Dev Tech Stack</h4>
+              <h4 class="h4 category-title">Development Tech Stack</h4>
               <div class="tech-stack">
                 <div class="tech-item">
                   <p>HTML </p>
@@ -635,7 +683,13 @@
                 <div class="tech-item">
                   <p>SQL</p>
                 </div>
-                
+                <div class="tech-item">
+                  <p>React Native</p>
+                </div>
+                <div class="tech-item">
+                  <p>Node JS</p>
+                </div>
+
                 <!-- <div class="tech-item">
                   <img src=".\assets\images\html-5.png" alt="HTML" class="tech-logo">
                 </div>
@@ -648,7 +702,7 @@
                 <div class="tech-item">
                   <img src=".\assets\images\sql-server.png" alt="CSS" class="tech-logo">
                 </div> -->
-                <!-- Add more web development tech items as needed -->
+                <!-- Add more Web Projects tech items as needed -->
               </div>
             </div>
 
@@ -685,10 +739,29 @@
               </div>
             </div>
 
-
+            <!-- Designing Tools -->
+            <div class="category">
+              <h4 class="h4 category-title">Designing Tools</h4>
+              <div class="tech-stack">
+                <div class="tech-item">
+                  <p>Canva </p>
+                </div>
+                <div class="tech-item">
+                  <p>Unity </p>
+                </div>
+                <div class="tech-item">
+                  <p>Blender </p>
+                </div>
+                <div class="tech-item">
+                  <p>Figma </p>
+                </div>
+                <!-- Add more ML tech items as needed -->
+              </div>
+            </div>
 
             <!-- Add more categories as needed -->
           </div>
+
         </section>
 
       </article>
@@ -697,9 +770,9 @@
 
 
 
-      <!--
-        - #PORTFOLIO
-      -->
+      //////////////////////////////////////
+      //////////// PORTFOLIO //////////////
+      //////////////////////////////////////
 
       <article class="portfolio" data-page="portfolio">
 
@@ -720,7 +793,11 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
+              <button data-filter-btn>Web Projects</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Android Applications</button>
             </li>
 
           </ul>
@@ -748,7 +825,11 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web Development</button>
+                <button data-select-item>Web Projects</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Android Development</button>
               </li>
 
             </ul>
@@ -757,7 +838,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="web projects">
               <a href="https://sowham-3098.github.io/SB_Decoder_Portfolio/" target="blank">
 
                 <figure class="project-img">
@@ -770,12 +851,12 @@
 
                 <h3 class="project-title">Portfolio Website</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web Projects</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="web projects">
               <a href="https://sowham-3098.github.io/CheckListia/" target="blank">
 
                 <figure class="project-img">
@@ -788,7 +869,7 @@
 
                 <h3 class="project-title">Check Listia</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web Projects</p>
 
               </a>
             </li>
@@ -803,9 +884,10 @@
 
 
 
-      <!--
-        - #BLOG
-      -->
+      //////////////////////////////////////
+      //////////// BLOG //////////////
+      //////////////////////////////////////
+
 
       <article class="blog" data-page="blog">
 
@@ -919,9 +1001,10 @@
 
 
 
-      <!--
-        - #CONTACT
-      -->
+      //////////////////////////////////////
+      //////////// CONTACT //////////////
+      //////////////////////////////////////
+
 
       <article class="contact" data-page="contact">
         <header>
@@ -961,11 +1044,11 @@
 
   </main>
 
+//////////////////////////////////////
+////////////// EMAIL API //////////////////
+//////////////////////////////////////
+ 
 
-  <!-- 
-  email contact smtp api link
-
- -->
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
   <script>
@@ -976,7 +1059,7 @@
         Password: "D6446E12845C7D989F8A08ED180EDAD52401",
         To: '2025.it17.sowhambhuin@gmail.com',
         From: '2025.it17.sowhambhuin@gmail.com',
-        Subject: "New contact form enquiry",
+        Subject: "New Mail",
         Body: "Name: " + document.getElementById("fullname").value
           + "<br> Email: " + document.getElementById("email").value
           + "<br> Messege:"

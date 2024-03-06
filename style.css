@@ -101,7 +101,8 @@ ion-icon,
 a,
 button,
 time,
-span {
+span,
+iconify-icon {
   display: block;
 }
 
@@ -567,6 +568,14 @@ main {
   margin: auto;
 }
 
+.iconify{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+
+}
+
+
 .service-content-box {
   text-align: center;
 }
@@ -620,6 +629,15 @@ main {
   box-shadow: var(--shadow-1);
 
 }
+
+.testimonials-avatar-box img{
+  width: 60px;
+ 
+  border-radius: 10px;
+  
+
+}
+
 
 .testimonials-item-title {
   margin-bottom: 7px;
@@ -746,7 +764,10 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  
+  border-color: 10px solid white;
   min-width: 100px; /* Set a minimum width for better responsiveness */
+  justify-content: center;
 }
 
 .tech-item::before {
@@ -756,7 +777,16 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  border-color: 1px solid white;
+  
+
 }
+
+.tech-item:hover {
+  color:aliceblue;
+  border-width: 1px;
+  border-color:var(--orange-yellow-crayola);
+} 
 
 .tech-logo {
   width: 50px; /* Adjust the size as needed */

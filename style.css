@@ -269,6 +269,7 @@ article.active {
 
 .h3 {
   font-size: var(--fs-2);
+  color: var(--head-text-color);
 }
 
 .h4 {
@@ -722,6 +723,7 @@ main {
   align-items: center;
   gap: 15px;
   margin-bottom: 25px;
+  
 }
 
 .timeline-list {

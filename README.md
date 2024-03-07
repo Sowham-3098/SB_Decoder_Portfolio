@@ -38,4 +38,5 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 MIT License
 ## Screenshot
 
-![Screenshot (6)](https://github.com/Sowham-3098/SB_Decoder_Portfolio/assets/95470604/caac14a4-55a4-41d8-8679-9ce0f9fbb2c2)
+![Screenshot 2024-03-08 014233](https://github.com/Sowham-3098/SB_Decoder_Portfolio/assets/95470604/4bf3c096-8432-4c97-ac0a-c941c51b6df4)
+

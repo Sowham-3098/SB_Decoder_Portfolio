@@ -4,7 +4,7 @@
 <!-- //////////////////////////////////////
 ////////////// HEAD //////////////////
 ////////////////////////////////////// -->
- 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,14 +24,17 @@
 ////////////////////////////////////// -->
 
 <body>
-  
-<!-- //////////////////////////////////////
+
+  <!-- <audio src="https://www.repeattube.net/?v=YaEG2aWJnZ8&s=0&e=&spd=1" autoplay loop></audio> -->
+
+
+  <!-- //////////////////////////////////////
 ////////////// MAIN //////////////////
 ////////////////////////////////////// -->
 
   <main>
-    
-<!-- //////////////////////////////////////
+
+    <!-- //////////////////////////////////////
 ////////////// SIDEBAR-INFO //////////////////
 ////////////////////////////////////// -->
 
@@ -46,10 +49,17 @@
 
         <div class="info-content">
           <h1 class="name" title="Sowham Bhuin">Sowham Bhuin</h1>
-
-          <div class="resume-link">
-            <a href="https://drive.google.com/file/d/1g5LF7eVeDY4Zn8oUuGRbQSmYDJmr4llK/view?usp=sharing"
-              target="_blank">Resume</a>
+          <div class="resanddark">
+            <div class="resume-link">
+              <a href="https://drive.google.com/file/d/1g5LF7eVeDY4Zn8oUuGRbQSmYDJmr4llK/view?usp=sharing"
+                target="_blank">Resume</a>
+            </div>
+            <div class="toggle-btn">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox"  class="toggle-label">
+                <span class="toggle-ball"></span>
+              </label>
+            </div>
           </div>
         </div>
 
@@ -128,11 +138,7 @@
         <div class="separator"></div>
 
         <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/sowham-bhuin/" target="blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
+
 
           <li class="social-item">
             <a href="https://www.facebook.com/sowham.bhuin?mibextid=ZbWKwL" target="blank" class="social-link">
@@ -149,6 +155,18 @@
           <li class="social-item">
             <a href="https://instagram.com/shutterbug_sowham?igshid=ZDdkNTZiNTM=" target="blank" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/sowham-bhuin/" target="blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Sowham-3098" target="blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
@@ -196,8 +214,8 @@
         </ul>
 
       </nav>
-      
-<!-- 
+
+      <!-- 
      //////////////////////////////////////
       //////////// ABOUT //////////////
     ////////////////////////////////////// -->
@@ -524,7 +542,7 @@
 
 
 
-     <!-- //////////////////////////////////////
+      <!-- //////////////////////////////////////
       //////////// RESUME //////////////
     ////////////////////////////////////// -->
 
@@ -1000,7 +1018,7 @@
 
 
 
-<!-- 
+      <!-- 
       //////////////////////////////////////
       //////////// CONTACT //////////////
       ////////////////////////////////////// -->
@@ -1044,11 +1062,31 @@
 
   </main>
 
-<!-- //////////////////////////////////////
+  <!-- //////////////////////////////////////
 ////////////// EMAIL API //////////////////
 //////////////////////////////////////
   -->
+<script>
+ 
 
+  const toggleBtn = document.querySelector('#checkbox');
+
+  toggleBtn.addEventListener('change', () =>{
+  
+    if (toggleBtn.checked) {
+      
+       document.body.classList.add("light-mode");
+       console.log("light mode"); 
+    }else{
+      document.body.classList.remove("light-mode");
+    }
+  });
+ 
+</script>
+
+
+
+  
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
   <script>

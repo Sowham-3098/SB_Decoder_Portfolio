@@ -196,6 +196,7 @@ article {
   padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  
 }
 
 
@@ -1316,22 +1317,6 @@ textarea.form-input::-webkit-resizer {
 
   }
 
-  /* .toggle-btn{
-    display: inline-flex;
-    
-   }
-  
-  .toggle-ball{
-    position:absolute;
-    top: 0.25rem;
-    left: 0.25rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background-color: #ffffff;
-    transition: transform 0.3s linear;
-
-  } */
   .info-content .name {
     margin-bottom: 0;
   }
@@ -1697,6 +1682,8 @@ textarea.form-input::-webkit-resizer {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
+  
+
 
 
   main {
@@ -1763,31 +1750,51 @@ textarea.form-input::-webkit-resizer {
    * RESET
    */
 
-  body::-webkit-scrollbar {
-    width: 20px;
+   body::-webkit-scrollbar {
+    width: 10px;
   }
 
   body::-webkit-scrollbar-track {
-    background: var(--smoky-black);
+    background: var(--bg-main);
+    
   }
 
   body::-webkit-scrollbar-thumb {
-    border: 5px solid var(--smoky-black);
-    background: hsla(0, 0%, 100%, 0.1);
+    /* border: 5px solid var(--smoky-black); */
+    background-color: transparent;
     border-radius: 20px;
     box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
       inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
 
   body::-webkit-scrollbar-thumb:hover {
-    background: hsla(0, 0%, 100%, 0.15);
+    background-color: transparent;
   }
 
-  body::-webkit-scrollbar-button {
-    height: 60px;
+  /* body::-webkit-scrollbar-button {
+    height: 30px;
+  } */
+  article{
+    overflow: scroll;
+    scrollbar-width: thin;
+    max-height: 84vh;
+    
   }
-
-
+  article {
+    overflow: auto;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  article::-webkit-scrollbar {
+    width: 6px; /* Adjust as needed */
+  }
+  
+  article::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the thumb */
+  }
+  
   .sidebar,
   article {
     width: auto;

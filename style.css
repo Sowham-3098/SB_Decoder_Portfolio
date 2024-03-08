@@ -35,6 +35,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -818,7 +819,8 @@ main {
   display: flex;
   position: relative;
   color: #ffaf00;
-  background: var(--border-gradient-onyx);
+  background: #FFBF00;
+  /* background: var(--border-gradient-onyx); */
   padding: 7px 15px;
   /* Adjust padding */
   margin: 0 0 7px 10px;

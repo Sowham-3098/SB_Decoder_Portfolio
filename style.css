@@ -1996,8 +1996,8 @@ textarea.form-input::-webkit-resizer {
 
 @media screen and (max-width: 480px) {
   .typewriter {
-    font-size: 18px;
-    margin-bottom: 18px;
+    font-size: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -2016,3 +2016,11 @@ textarea.form-input::-webkit-resizer {
 }
 
 
+.zoom-effect {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.15);
+}

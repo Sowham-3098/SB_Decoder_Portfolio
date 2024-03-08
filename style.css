@@ -1850,6 +1850,19 @@ textarea.form-input::-webkit-resizer {
   .info_more-btn {
     display: none;
   }
+  .project-item{
+    
+    width:397px;
+    margin-bottom: 20px;
+  }
+
+  .project-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+  }
 
   .sidebar-info_more {
     opacity: 1;

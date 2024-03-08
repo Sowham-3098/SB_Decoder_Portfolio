@@ -873,15 +873,7 @@ main {
   }
 }
 
-/* iconify-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-} */
-/* Add any additional styling as needed */
 
-
-/* Portfolio------------------------------------------------------------------------------------------------ */
 
 .filter-list {
   display: none;
@@ -1183,6 +1175,7 @@ main {
   grid-template-columns: 1fr;
   gap: 25px;
   margin-bottom: 25px;
+  
 }
 
 .form-input {
@@ -1319,6 +1312,10 @@ textarea.form-input::-webkit-resizer {
 
   .info-content .name {
     margin-bottom: 0;
+  }
+
+  .typewriter{
+    font-size: 10px;
   }
 
 }
@@ -1952,4 +1949,70 @@ textarea.form-input::-webkit-resizer {
 
 }
 
-/* ---------------light-mode---------------- */
+/* ------------TypeWriter Effect ---------------- */
+
+
+.typewriter {
+  overflow: hidden;
+  border-right: -0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  letter-spacing: .15em;
+  animation: typing 5s steps(20) infinite;
+  font-size: 40px;
+  position: relative; /* Add position relative */
+}
+
+.typewriter::after { /* Add blinking cursor */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0.15em;
+  background-color: orange;
+  animation: blink 1s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80%; }
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+
+}
+
+@media screen and (max-width: 768px) {
+  .typewriter {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typewriter {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 770px ) {
+  .typewriter {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width:1024px ) {
+  .typewriter {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+

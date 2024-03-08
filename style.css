@@ -1011,6 +1011,7 @@ main {
   transition: var(--transition-1);
 }
 
+
 .project-item>a:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
@@ -1019,6 +1020,8 @@ main {
 .project-item-icon-box ion-icon {
   --ionicon-stroke-width: 50px;
 }
+
+
 
 .project-img img {
   width: 100%;
@@ -2023,4 +2026,14 @@ textarea.form-input::-webkit-resizer {
 
 .zoom-effect:hover {
   transform: scale(1.15);
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 20px;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  font-size: 10px;
 }

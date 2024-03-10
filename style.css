@@ -1322,6 +1322,10 @@ textarea.form-input::-webkit-resizer {
   .typewriter{
     font-size: 10px;
   }
+  .project-img{
+    height: max-content;
+  
+  }
 
 }
 

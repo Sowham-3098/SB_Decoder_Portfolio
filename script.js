@@ -22,9 +22,13 @@ const icon = document.getElementById("icon");
 let rotationDegrees = 0;
 
 icon.addEventListener("click", function () {
+    if(window.innerWidth < 580) {
+
     rotationDegrees += 180;
     icon.style.transform = `rotate(${rotationDegrees}deg)`;
+    }
 });
+
 
 
 

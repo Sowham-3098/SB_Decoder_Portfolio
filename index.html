@@ -1192,15 +1192,17 @@
 
 
     const toggleBtn = document.querySelector('#checkbox');
-
+    const toggleball = document.querySelector('.toggle-ball');
+    toggleball.innerHTML = '<img src="dark.png" alt="moon" width="10" height="10"/>';
     toggleBtn.addEventListener('change', () => {
-
       if (toggleBtn.checked) {
-
         document.body.classList.add("light-mode");
-        console.log("light mode");
+        toggleball.innerHTML = '<img src="light.png" alt="sun" width="10" height="10"/>';
+        // console.log("light mode");
       } else {
         document.body.classList.remove("light-mode");
+        toggleball.innerHTML = '<img src="dark.png" alt="moon" width="10" height="10"/>';
+        // console.log("dark mode");
       }
     });
 

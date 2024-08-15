@@ -370,7 +370,7 @@ main {
 }
 
 .avatar-box img {
-  background: var(--bg-gradient-onyx);
+  background: transparent;
   border-radius: 12px;
 }
 
@@ -1442,7 +1442,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box img {
-    width: 120px;
+    width: 140px;
   }
 
   .info-content .name {

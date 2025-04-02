@@ -2,7 +2,13 @@
 
 
   /* gradient */
-  --bg-main: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+  --bg-main: linear-gradient(111.4deg, #020c1b 6.5%, #123d79 93.2%);
+
+
+
+
+
+
 
   --bg-gradient-onyx: linear-gradient(to bottom right,
       hsl(240, 1%, 25%) 3%,
@@ -84,9 +90,9 @@
 }
 
 :root .light-mode{
-  --bg-main: linear-gradient( 358.7deg,  #dbeafe 1.7%, #bfdbfe 51.1%, #93c5fd 95.5% );
+  --bg-main: linear-gradient(358.7deg, #ebf5ff 1.7%, #c2e0ff 51.1%, #99ccff 95.5%);
   --text-color:hsl(0, 0%, 21%);
-  --head-text-color:hsl(0, 2%, 11%);
+  --head-text-color:hsl(0, 4%, 15%);
 }
 
 
@@ -1157,7 +1163,7 @@ main {
   transition: var(--transition-1);
 }
 
-.blog-post-item>a:hover .blog-item-title {
+.blog-post-item>a .blog-item-title {
   color: var(--orange-yellow-crayola);
 }
 
